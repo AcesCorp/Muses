@@ -1,0 +1,16 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\Muses.Document = Muses.Document
+
+
+HKEY_CLASSES_ROOT\Muses.Document\CLSID = {8600AA13-50A1-4F48-A7B9-D41CBD3BD9CB}
+
+HKEY_CLASSES_ROOT\CLSID\{8600AA13-50A1-4F48-A7B9-D41CBD3BD9CB} = Muses.Document
+HKEY_CLASSES_ROOT\CLSID\{8600AA13-50A1-4F48-A7B9-D41CBD3BD9CB}\ProgId = Muses.Document
+
+HKEY_CLASSES_ROOT\CLSID\{8600AA13-50A1-4F48-A7B9-D41CBD3BD9CB}\LocalServer32 = Muses.EXE

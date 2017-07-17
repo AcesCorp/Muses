@@ -1,0 +1,29 @@
+// Muses.idl : type library source for Muses.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Muses.tlb).
+
+[ uuid(CCF05EE6-CD14-4E62-8D4A-87DC7B4B5C7B), version(1.0) ]
+library Muses
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CMusesDoc
+	
+	[ uuid(AB355383-8A59-44F5-AC95-7456E145B205) ]
+	dispinterface IMuses
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CMusesDoc
+	
+	[ uuid(8600AA13-50A1-4F48-A7B9-D41CBD3BD9CB) ]
+	coclass CMusesDoc
+	{
+		[default] dispinterface IMuses;
+	};
+};
